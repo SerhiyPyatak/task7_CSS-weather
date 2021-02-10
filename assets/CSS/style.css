@@ -1,0 +1,140 @@
+@import "normalize.css";
+
+*{
+    transition:             all .1s ease-in;
+}
+
+body {
+    font-size:              0;
+    width:                  100%;
+    height:                 875px;
+    box-sizing:             border-box;
+    background-color:       rgb(51, 153, 204);
+    border:                 25px solid rgb(43, 129, 172);
+    font-family:            "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+header {
+    font-size:              18px;
+    width:                  67%;
+    margin:                 auto;
+    color:                  #fff;
+}
+
+main {
+    width:                  67%;
+    margin:                 auto;
+    color:                  #fff;
+    border:                 6px solid white;
+}
+
+/*
+main:hover {
+    opacity: 0.5;
+}
+*/
+
+.grid {
+    list-style:             none;
+    margin:                 0;
+    padding:                0;
+    font-size:              0;
+}
+
+.grid > li {
+    font-size:              20px;
+    display:                inline-block;
+    height:                 160px;
+    cursor:                 pointer;
+    border:                 6px solid white;
+    box-sizing:             border-box;
+    text-align:             center;
+    padding-top:            1.5em;
+}
+
+#sydney {
+    width:                  100%;
+    background-color:       rgb(102, 102, 153);
+}
+
+#tokyo {
+    width: 25%;
+    background-color:       rgb(51, 153, 102);
+}
+
+#san-francisco {
+    background-color:       rgb(204, 102, 153);
+    width: 50%;
+}
+
+#new-delhi {
+    width: 25%;
+    background-color:       rgb(102, 153, 153);
+}
+
+#moscow {
+    width: 25%;
+    background-color:       rgb(194, 71, 71);
+}
+
+#tel-aviv {
+    width: 25%;
+    background-color:       rgb(226, 103, 74);
+}
+
+#cair {
+    width: 25%;
+    background-color:       rgb(255, 204, 102);
+}
+
+#new-york {
+    width: 25%;
+    background-color:       rgb(153, 204, 153);
+}
+
+#belgrade {
+    width: 25%;
+    background-color:       rgb(153, 102, 153);
+}
+
+#paris {
+    width: 25%;
+    background-color:       rgb(51, 204, 204);
+}
+
+#lisbon {
+    width:                  50%;
+}
+
+.forecast {
+    display:                block;
+    text-align:             center;
+    margin-top:             1.5em;
+    opacity: 0.55;
+}
+
+.wi {
+    font-size:              1.5em;
+}
+/* Some practice in CSS selectors :)
+#lisbon, #san-francisco {
+    width: 50%;
+}
+
+.grid > li:not(#sydney, #lisbon, #san-francisco) {
+    width: 25%;
+}
+*/
+
+.grid:hover > li:not(:hover) {
+    opacity: 0.7;
+    filter:brightness(2);
+}
+
+footer {
+    font-size:              20px;
+    color:                  #fff;
+    font-weight:            100;
+    width:                  67%;
+    margin:                 auto;
+}
